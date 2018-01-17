@@ -1,0 +1,106 @@
+name: Spelp
+description: A simple but useful plugin for newer players on your server
+author: Spimy
+main: me.spimy.spelp.Main
+version: 1.5
+
+commands:
+  website:
+    description: Shows the website URL set in config file
+    usage: /<command>
+    aliases: [web, site]
+  discord:
+    description: Shows the discord invite URL set in config file
+    usage: /<command>
+  store:
+    description: Shows the store URL set in config file
+    usage: /<command>
+    aliases: [shop]
+  forums:
+    description: Shows the forums URL set in config file
+    usage: /<command>
+    aliases: [forum]
+  ranks:
+    description: Shows the ranks available on the server set in config file
+    usage: /<command>
+    aliases: [rank]
+  helpme:
+    description: Message Staff members that are currently online
+    usage: /<command>
+    aliases: [halp]
+  setspawn:
+    description: Sets the spawn location
+    usage: /<command>
+  spawn:
+    description: Teleports a player to spawn
+    usage: /<command>
+  vanish:
+    description: Vanishes or Unvanishes you
+    usage: /<command>
+    aliases: [v, hide]
+  vanishlist:
+    description: View players who are vanished
+    usage: /<command>
+    aliases: [vl, showv]
+  spreload:
+    description: Reloads the plugin and config file
+    usage: /<command>
+  spelp:
+    description: Show all commands available for the plugin
+    usage: /<command>
+
+permissions:
+  spelp.website:
+    description: Allow use of /website
+    default: op
+  spelp.discord:
+    description: Allow use of /discord
+    default: op
+  spelp.store:
+    description: Allow use of /store
+    default: op
+  spelp.forums:
+    description: Allow use of /forums
+    default: op
+  spelp.ranks:
+    description: Allow use of /ranks
+    default: op
+  spelp.helpme:
+    description: Allow use of /helpme
+    default: op
+  spelp.reload:
+    description: Allow use of /spreload
+    default: op
+  spelp.help:
+    description: Allow use of /spelp
+    default: op
+  spelp.helpreceive:
+    description: Receives message from person who needs help
+    default: op
+  spelp.setspawn:
+    description: Allow use of /setspawn
+    default: op
+  spelp.spawn:
+    description: Allow use of /spawn
+    default: op
+  spelp.staffjoin:
+    description: Join message for staff
+    default: op
+  spelp.staffquit:
+    description: Quit message for staff
+    default: op
+  spelp.vanish:
+    description: Allow use of /vanish
+    default: op
+  spelp.vanishlist:
+    description: Allow use of /vanishlist
+    default: op
+  spelp.helpmsg:
+    description: Allow use of /help, /?
+    default: op
+  spelp.pluginlist:
+    description: Allow use of /plugins, /pl
+    default: op
+  spelp.*:
+    description: Allow use of ALL commands
+    default: op

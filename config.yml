@@ -1,0 +1,118 @@
+#Version: 1.5
+#Make sure all messages are within inverted comma ['']!
+
+#ArrayLists are sort of weird, it does not get reset when you reload the config.
+#Ranks and Vanish use ArrayLists meaning that these 2 commands can be bugged.
+#If the 2 commands are ever bugged, simply restart or reload your server.
+#------------------------------------------------------------------------------------
+#-¦¦¦¦¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦----------¦¦¦¦¦¦-¦¦¦¦¦¦¦¦--¦¦¦¦¦¦¦¦-
+#-¦¦¦¦¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦¦¦--¦¦¦¦¦¦¦¦-
+#-¦¦¦¦¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦¦¦--¦¦¦¦¦¦¦¦-
+#-¦¦¦¦¦¦---------¦¦¦¦¦¦--¦¦¦¦¦¦---¦¦¦¦¦¦---¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦---¦¦¦¦¦¦¦¦¦¦¦¦¦¦---
+#-¦¦¦¦¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦¦¦¦¦¦¦¦¦---¦¦¦¦¦¦---¦¦¦¦¦¦--¦¦¦¦¦¦--¦¦¦¦¦¦---¦¦¦¦¦¦¦¦¦¦¦¦¦¦---
+#-¦¦¦¦¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦¦¦¦¦¦¦¦¦---¦¦¦¦¦¦---¦¦¦¦¦¦--¦¦¦¦¦¦--¦¦¦¦¦¦-----¦¦¦¦¦¦¦¦¦¦-----
+#-¦¦¦¦¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦¦¦¦¦¦¦¦¦---¦¦¦¦¦¦---¦¦¦¦¦¦--¦¦¦¦¦¦--¦¦¦¦¦¦-------¦¦¦¦¦¦-------
+#---------¦¦¦¦¦¦-¦¦¦¦¦¦-----------¦¦¦¦¦¦---¦¦¦¦¦¦----------¦¦¦¦¦¦-------¦¦¦¦¦¦-------
+#-¦¦¦¦¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦---------¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦----------¦¦¦¦¦¦-------¦¦¦¦¦¦-------
+#-¦¦¦¦¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦---------¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦----------¦¦¦¦¦¦-------¦¦¦¦¦¦-------
+#-¦¦¦¦¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦---------¦¦¦¦¦¦¦¦¦¦-¦¦¦¦¦¦----------¦¦¦¦¦¦-------¦¦¦¦¦¦-------
+#------------------------------------------------------------------------------------
+
+#-= Variables =-
+#{player}: Replaced by the Player's Minecraft username.
+#{prefix}: Replaced by the prefix.
+
+#Prefix for all messages.
+prefix: '&f[&bSpelp&f] &7»'
+
+#-= First Join Events =-
+#First join message.
+FirstJoinMessage: '{prefix} &e{player} has joined the game for the first time.'
+#Enable or Disable first join message.
+FirstJoinMsgEnabled: true
+
+#-= Join Event =-
+#Join message for all players.
+JoinMsg: '{prefix} &e{player} has joined the game.'
+#Join message for staff members.
+StaffJoinMsg: '{prefix} &eA staff member: {player} has joined the game.'
+#Enable or Disable join message.
+JoinMsgEnabled: true
+
+#-= Quit Event =-
+#Quit message for all players.
+QuitMsg: '{prefix} &e{player} has left the game.'
+#Quit message for staff members.
+StaffQuitMsg: '{prefix} &eA staff member: {player} has left the game.'
+#Enable or Disable quit message.
+QuitMsgEnabled: true
+
+#Configure messages shown for each command.
+#If you don't want a prefix, don't use {prefix}.
+noperm: '{prefix} &cYou do not have permissions to use this command.'
+reloadmsg: '{prefix} &aSpelp has been reloaded.'
+websitemsg: '{prefix} &6Website: &ahttps://example.com'
+discordmsg: '{prefix} &6Discord: &ahttps://discord.gg/invite'
+storemsg: '{prefix} &6Store: &ahttps://store.example.com'
+forumsmsg: '{prefix} &6Forums: &ahttps://example.com/forums'
+
+#Ranks Message | Show the ranks available on your server or link to buy ranks!
+#For some weird reasons /spreload won't laod changes made here, restart server to update this section!
+ranks:
+- '{prefix} &6Buy a rank at: &ahttps://store.example.com/ranks'
+- '{prefix} &6Rank 1: &a[VIP]'
+- '{prefix} &6Rank 2: &a[VIP&6+&a]'
+- '{prefix} &6Rank 3: &b[MVP]'
+- '{prefix} &6Rank 4: &b[MVP&c+&b]'
+- '{prefix} &6Rank 5: &3[Spimy]'
+- '{prefix} &6Rank 6: &3[Spimy&5+&3]'
+
+#-= Support Help Messages =-
+#Message that Staff members receives.
+HelpmeMsg: '{prefix} &6{player} &cNEEDS HELP!'
+#Message that Players receive when /helpme has been executed.
+SentHelpMessage: '{prefix} &a{player}, a message has been sent to currently online staff members.'
+
+#-= Spawn Messages =-
+#Message when spawn has been set.
+SpawnSetMsg: '{prefix} &aSpawn has been set to your current location.'
+#Message when a player is teleported to spawn.
+SpawnTeleportedMsg: '{prefix} &aYou have been teleported to spawn.'
+#Message when spawn has not been set.
+SpawnNotSetMsg: '{prefix} &cSpawn has not been set, please set one first.'
+
+#-= Vanish =-
+#Make sure you unvanish yourself before leaving the server otherwise it might bug the plugin!
+#If ever the vanish list is glitching, a simple restart or reloading the server should fix it!
+#Message when a player is vanished.
+vanishMsg: '{prefix} &aYou are now vanished.'
+#Message when a player is no longer vanished.
+UNvanishMsg: '{prefix} &cYou are no longer vanished.'
+vanishedList: '{prefix} &6Players who are vanished:'
+#Change this to disabled message if "vanishEnabled" is set to false.
+EmptyvanishedList: '{prefix} &cThere are no vanished players.'
+#Insert desired color code for vanished player list.
+vanishlistNameColor: '&a'
+
+#Enable or Disable commands.
+websiteEnabled: true
+discordEnabled: true
+storeEnabled: true
+forumsEnabled: true
+ranksEnabled: true
+helpmeEnabled: true
+vanishEnabled: true
+#Whether /spelp is enabled or disabled and not the plugin!
+spelpEnabled: true
+
+#-= Blocked Commands =-
+#Whether the command can be used or not.
+#True or False, this won't apply to admins with the correct permissions.
+plugincmdEnabled: true
+helpmsgcmdEnabled: true
+#Messages when the commands are disabled.
+plugincmdDisabledMsg: '{prefix} &cSorry {player} but you are not allowed to view are plugins list.'
+helpmsgcmdDisabledMsg: '{prefix} &cSorry {player}, the help command has been disabled.'
+
+#Message for disabled commands.
+disabled: '{prefix} &cThis command has been disabled.'
